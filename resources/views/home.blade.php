@@ -87,6 +87,36 @@
     text-align: center;
     
 }
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
             </style>
         </head>
  
@@ -103,7 +133,14 @@
                     </ul>
                 </div>
             </div>
-        <h1><center> SELAMAT DATANG DI JAWI TRAVEL </center></h1>
+            <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <center><h3 class="animate-charcter"> SELAMAT DATANG DI JAWI TRAVEL</h3></center>
+    </div>
+  </div>
+</div>
+
             <div class="header">
                 <div class="search">
                     <input type="text" placeholder="search your destination">
